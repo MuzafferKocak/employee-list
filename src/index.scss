@@ -1,0 +1,82 @@
+@import "./scss/_reset.scss";
+@import "./scss/_variables.scss";
+@import "./scss/_responsive.scss";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: $clr-primary-7;
+  color: $clr-grey-9;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.container {
+  width: 70vw;
+  margin: 10px auto;
+  max-width: $fixed-width;
+  background: $clr-grey-1;
+  border-radius: $radius;
+  padding: 1.5rem 2rem;
+  box-shadow: $dark-shadow;
+  h5 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    margin: 5px;
+  
+    font-size: 1.5rem;
+    text-transform: none;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 0.7rem;
+    color: $clr-grey-7;
+  }
+}
+ 
+
+
+.card-body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.95rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: $light-shadow;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.btns button {
+  color: $clr-white;
+  width: 40%;
+  border-color: transparent;
+  background: $clr-primary-8;
+  margin: 1rem 0.5rem 0 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  letter-spacing: $spacing;
+  border-radius: $radius;
+  outline: 1px solid rgba(242, 138, 178, 0.8);
+  cursor: pointer;
+}
