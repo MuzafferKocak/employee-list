@@ -65,6 +65,15 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  
+}
+button:disabled {
+  &:disabled {
+    
+      background-color: #e2e2e2;
+      color: #a9a9a9;
+      cursor: not-allowed;
+  }
 }
 .btns button {
   color: $clr-white;
@@ -79,4 +88,5 @@ body {
   border-radius: $radius;
   outline: 1px solid rgba(242, 138, 178, 0.8);
   cursor: pointer;
+  
 }

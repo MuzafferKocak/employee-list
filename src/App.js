@@ -5,6 +5,7 @@ import data from "./helper/data";
 function App() {
   const [page, setPage] = useState(1);
   const itemsPerPage = 5;
+  console.log(itemsPerPage, page);
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentData = data.slice(startIndex, endIndex);
@@ -31,7 +32,7 @@ function App() {
         <button onClick={() => setPage(page - 1)} disabled={page === 1}>
           Prev
         </button>
-        <button onClick={() => setPage(page + 1)}>Next</button>
+        <button disabled={itemsPerPage===page + 1 } onClick={() => setPage(page + 1)}>Next</button>
       </div>
     </main>
   );
